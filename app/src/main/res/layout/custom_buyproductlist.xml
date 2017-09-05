@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_gap"
+        app:cardElevation="@dimen/cardElevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/medium_gap"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/productnameandpic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!--Brand-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/buyproductbrand"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Himalaya"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+                            <!--Product name-->
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/buyproductname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="Himalaya Hard Rock"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/buyproductoffer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="Offer buy 50 get 5 free"
+                                    android:textColor="@android:color/holo_green_dark"
+                                    android:textSize="13sp" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <CheckBox
+                            android:id="@+id/productfavcheck"
+                            style="?android:attr/starStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|top"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/buyproductpic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardElevation"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:background="@color/colorBackgroundLight" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/buyproductvolume"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Volume : 250 mL"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Quantity"
+                    android:textSize="15sp" />
+
+                <com.infikaa.indibubble.CustomSpinner
+                    android:id="@+id/buyproductquantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardElevation"
+                android:layout_marginBottom="@dimen/medium_gap"
+                android:background="@color/colorBackgroundLight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <!--Amount-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/buyproductamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <!--Final Price-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Final Price"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/buyproductfinalprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorTextSecondary"
+                        android:text="Amount"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <!--Quantity-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Total Quantity"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/buyproductfinalquantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

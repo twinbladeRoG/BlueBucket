@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_gap"
+        app:cardElevation="@dimen/cardElevation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/favcartproductpic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerInside"
+                android:src="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingLeft="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:weightSum="4">
+                        <!--Brand-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/favcartproductbrand"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="By Himalaya"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/favcartproductname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Himalaya Hard Rock"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/favcartproductprice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="INR 150"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/favcartproductquantity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="Quantity 5"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Offer"
+                                android:id="@+id/offer_favcart"/>
+                        </TableRow>
+                    </TableLayout>
+
+                    <ImageButton
+                        android:id="@+id/favcartproductremovebut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:padding="@dimen/small_gap"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/ic_close" />
+                    <!-- android:text="Remove"  -->
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

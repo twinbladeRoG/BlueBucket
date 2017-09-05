@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infikaa.indibubble.PaymentOptionActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:id="@+id/paymentlayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:gravity="center"
+         android:layout_weight="2">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+     </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+             android:layout_gravity="center"
+
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customproductdesdesign"
+                android:layout_gravity="center"
+                android:padding="10dp">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentoption">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash on Delivery"
+                    android:id="@+id/paymentcod"
+                    android:padding="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PayTM"
+                    android:id="@+id/paymentpaytm"
+                    android:padding="10dp"/>
+            </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/paymentproceedbut"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

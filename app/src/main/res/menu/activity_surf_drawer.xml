@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_order_24dp"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="My Favourite" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart_24dp"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_qrcode"
+            android:icon="@drawable/ic_qr_camera_24dp"
+            android:title="My Scanner" />
+    </group>
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/ic_legal_24dp"
+            android:title="Legal" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Help" />
+
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_24dp"
+            android:title="Log out" />
+    </group>
+
+</menu>

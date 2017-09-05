@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/product_item_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="4dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/itemPic"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:scaleType="centerInside" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/medium_gap">
+                <!-- Brand -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/itembrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Himalaya"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <!--Product name -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/itemname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Himalaya Aqua Fresh"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <!-- volume -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/itemvolume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume : 50ml"
+                        android:textSize="12sp" />
+                </TableRow>
+                <!-- Price -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/itemprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INR 150"
+                        android:textSize="12sp" />
+
+                </TableRow>
+                <!--Dist name-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/itemdistname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="by Google Inc"
+                        android:textSize="10sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

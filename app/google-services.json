@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "203969761307",
+    "project_id": "indi-bubble"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203969761307:android:c262ac4627569100",
+        "android_client_info": {
+          "package_name": "com.infikaa.indibubble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203969761307-3c2c772u9uf8bff2odo7vb5figksbu2f.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "203969761307-kkfe98eim4b2jvatf1ltiguca9jomub1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.infikaa.indibubble",
+            "certificate_hash": "134c4c7eee0a434ef7048e0d724e428e2e636310"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiPu0GXUfQkFVx_0CSaByKHiMGiu1vuLA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

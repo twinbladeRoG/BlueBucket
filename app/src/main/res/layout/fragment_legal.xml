@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.infikaa.indibubble.LegalActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_legal"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Product quality and quantity-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Product quality and quantity"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/productqqtoggle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/legaltoggleimageselector"
+                    android:textOff=""
+                    android:textOn=""
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/productqqtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+
+                <!-- Consent-->
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Consent"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/productcontoggle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/legaltoggleimageselector"
+                    android:textOff=""
+                    android:textOn=""
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/productcontext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <!-- Disclosure-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Disclosure"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/productdistoggle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/legaltoggleimageselector"
+                    android:textOff=""
+                    android:textOn=""
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/productdistext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <!-- Security-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Security"
+                    android:textSize="15sp"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/productsertoggle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/legaltoggleimageselector"
+                    android:textOff=""
+                    android:textOn=""
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/productsertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <!-- Change to this privacy policy-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Change to this privacy policy"
+                    android:textSize="15sp" />
+
+                <ToggleButton
+                    android:id="@+id/productpritoggle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/legaltoggleimageselector"
+                    android:textOff=""
+                    android:textOn=""
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/productpritext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

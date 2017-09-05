@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorTextWhite">#fff</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorBackground">#EEE</color>
+    <color name="colorBackgroundLight">#E0E0E0</color>
+    <color name="enterBack">#B3E5FC</color>
+    <color name="grey">#EEE</color>
+
+    <color name="translucent_scrim_top">#26000000</color>
+    <color name="translucent_scrim_top_center">#0C000000</color>
+    <color name="translucent_scrim_bottom">#2A000000</color>
+    <color name="translucent_scrim_bottom_center">#0C000000</color>
+
+
+
+</resources>
